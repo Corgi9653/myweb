@@ -3,32 +3,235 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>個人網站</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <title>洪嘉璡｜個人作品集</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Microsoft JhengHei",sans-serif;
+        }
+
+        body{
+            background:#f5f7fa;
+            color:#333;
+        }
+
+        /* 導覽列 */
+        nav{
+            position:fixed;
+            width:100%;
+            top:0;
+            background:rgba(0,0,0,0.8);
+            padding:15px 0;
+            z-index:1000;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin:0 20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            transition:.3s;
+        }
+
+        nav ul li a:hover{
+            color:#ffd700;
+        }
+
+        /* 首頁 */
+        .masthead{
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+
+            background:
+                    linear-gradient(
+                            rgba(0,0,0,.5),
+                            rgba(0,0,0,.5)),
+                    url("img/bg.jpg");
+
+            background-size:cover;
+            background-position:center;
+
+            color:white;
+        }
+
+        .masthead-heading{
+            font-size:70px;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+
+        .masthead-subheading{
+            font-size:28px;
+        }
+
+        .page-section{
+            padding:100px 10%;
+        }
+
+        h2{
+            text-align:center;
+            font-size:40px;
+            margin-bottom:40px;
+            color:#222;
+        }
+
+        /* 關於我 */
+        .about{
+            text-align:center;
+        }
+
+        .profile{
+            width:250px;
+            height:250px;
+            object-fit:cover;
+            border-radius:50%;
+            margin-top:30px;
+            box-shadow:0 10px 30px rgba(0,0,0,.2);
+        }
+
+        .about p{
+            max-width:800px;
+            margin:auto;
+            line-height:2;
+            font-size:18px;
+        }
+
+        /* 作品展示 */
+        .gallery{
+            display:grid;
+            grid-template-columns:
+            repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 20px rgba(0,0,0,.15);
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+            text-align:center;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+    </style>
 </head>
-<body id="page-top">
+
+<body>
+
+<!-- 導覽列 -->
+<nav>
+    <ul>
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#works">作品展示</a></li>
+    </ul>
+</nav>
+
+<!-- 首頁 -->
 <header class="masthead">
-    <div class="container">
-        <div class="masthead-heading">洪嘉璡</div>
-        <div class="masthead-subheading">數位媒體 / 大一</div>
+    <div>
+        <div class="masthead-heading">
+            洪嘉璡
+        </div>
+
+        <div class="masthead-subheading">
+            數位媒體設計 × AI創作 × 網頁開發
+        </div>
     </div>
 </header>
-<section class="page-section">
-    <div class="container">
-        <h2>關於我</h2>
-        <p>我是一位對動畫製作與AI生成內容充滿熱情的學生，
-            本學期學習了生成式AI、多媒體設計以及網頁開發技術，
-            並將這些能力整合應用在創作與專案中。</p>
-        <img src="img/本人照.png" style="max-width:250px;">
+
+<!-- 關於我 -->
+<section class="page-section" id="about">
+
+    <h2>關於我</h2>
+
+    <div class="about">
+
+        <p>
+            我是一位對動畫製作與 AI 生成內容充滿熱情的學生。
+            本學期學習了生成式 AI、多媒體設計以及網頁開發技術，
+            並將這些能力整合應用在創作與專案中。
+            希望透過作品呈現創意與技術結合的可能性。
+        </p>
+
+        <img src="img/本人照.png" class="profile">
+
     </div>
+
 </section>
-<section class="page-section bg-light">
-    <div class="container">
-        <h2>作品展示</h2>
-        <div><img src="img/小惡魔.png" style="max-width:200px;margin:8px;">
-            <img src="img/完美女孩.png" style="max-width:200px;margin:8px;">
-            <img src="img/蝴蝶少女.png" style="max-width:200px;margin:8px;">
-            <img src="img/笑臉.png" style="max-width:200px;margin:8px;"></div>
+
+<!-- 作品展示 -->
+<section class="page-section" id="works">
+
+    <h2>作品展示</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="img/小惡魔.png">
+            <h3>小惡魔</h3>
+        </div>
+
+        <div class="card">
+            <img src="img/完美女孩.png">
+            <h3>完美女孩</h3>
+        </div>
+
+        <div class="card">
+            <img src="img/蝴蝶少女.png">
+            <h3>蝴蝶少女</h3>
+        </div>
+
+        <div class="card">
+            <img src="img/笑臉.png">
+            <h3>笑臉角色</h3>
+        </div>
+
     </div>
+
 </section>
-</body></html>
+
+<footer>
+    © 2026 洪嘉璡 個人作品集
+</footer>
+
+</body>
+</html>
