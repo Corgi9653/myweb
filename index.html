@@ -6,7 +6,7 @@
     <title>洪嘉璡｜個人作品集</title>
 
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/work.css">
     <style>
 
         *{
@@ -59,17 +59,13 @@
             align-items:center;
             justify-content:center;
             text-align:center;
-
-            background:
-                    linear-gradient(
-                            rgba(0,0,0,.5),
-                            rgba(0,0,0,.5)),
-                    url("img/bg.jpg");
+            color:white;
 
             background-size:cover;
             background-position:center;
+            background-repeat:no-repeat;
 
-            color:white;
+            animation: slideshow 16s infinite;
         }
 
         .masthead-heading{
@@ -153,6 +149,7 @@
         }
 
     </style>
+
 </head>
 
 <body>
@@ -186,10 +183,8 @@
     <div class="about">
 
         <p>
-            我是一位對動畫製作與 AI 生成內容充滿熱情的學生。
-            本學期學習了生成式 AI、多媒體設計以及網頁開發技術，
-            並將這些能力整合應用在創作與專案中。
-            希望透過作品呈現創意與技術結合的可能性。
+            有些神經的柯基，持續累積作品與經驗。
+            創作方面:oc、二創、塗鴉。
         </p>
 
         <img src="img/本人照.png" class="profile">
@@ -203,26 +198,105 @@
 
     <h2>作品展示</h2>
 
-    <div class="gallery">
+    <div class="portfolio-grid">
 
-        <div class="card">
-            <img src="img/小惡魔.png">
-            <h3>小惡魔</h3>
+        <!-- 作品1 -->
+        <div class="portfolio-card">
+            <img src="img/小惡魔.png" alt="小惡魔">
+
+            <div class="portfolio-content">
+
+                <span class="category">
+                    原創角色設計
+                </span>
+
+                <h3>小惡魔</h3>
+
+                <p>
+                    以奇幻風格為主題，強調角色個性與色彩表現。
+                </p>
+
+                <div class="tags">
+                    <span>oc</span>
+                    <span>角色設計</span>
+                    <span>數位繪圖</span>
+                </div>
+
+            </div>
         </div>
 
-        <div class="card">
-            <img src="img/完美女孩.png">
-            <h3>完美女孩</h3>
+        <!-- 作品2 -->
+        <div class="portfolio-card">
+            <img src="img/完美女孩.png" alt="完美女孩">
+
+            <div class="portfolio-content">
+
+                <span class="category">
+                    人像創作
+                </span>
+
+                <h3>完美女孩</h3>
+
+                <p>
+                    練習不同的上色方法，以及故事撰寫練習而誕生的角色。
+                </p>
+
+                <div class="tags">
+                    <span>人像設計</span>
+                    <span>藝術創作</span>
+                </div>
+
+            </div>
         </div>
 
-        <div class="card">
-            <img src="img/蝴蝶少女.png">
-            <h3>蝴蝶少女</h3>
+        <!-- 作品3 -->
+        <div class="portfolio-card">
+            <img src="img/蝴蝶少女.png" alt="蝴蝶少女">
+
+            <div class="portfolio-content">
+
+                <span class="category">
+                    概念藝術
+                </span>
+
+                <h3>蝴蝶少女</h3>
+
+                <p>
+                    結合自然元素與角色設計，
+                    呈現夢幻且具故事性的視覺風格。
+                </p>
+
+                <div class="tags">
+                    <span>Fantasy</span>
+                    <span>Concept Art</span>
+                </div>
+
+            </div>
         </div>
 
-        <div class="card">
-            <img src="img/笑臉.png">
-            <h3>笑臉角色</h3>
+        <!-- 作品4 -->
+        <div class="portfolio-card">
+            <img src="img/笑臉.png" alt="笑臉">
+
+            <div class="portfolio-content">
+
+                <span class="category">
+                    插畫創作
+                </span>
+
+                <h3>笑臉</h3>
+
+                <p>
+                    嘗試不同風格的場景塑造，
+                    增添不同視覺效果。
+                </p>
+
+                <div class="tags">
+                    <span>Illustration</span>
+                    <span>Design</span>
+                </div>
+
+            </div>
         </div>
 
     </div>
